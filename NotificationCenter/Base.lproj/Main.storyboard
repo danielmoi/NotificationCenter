@@ -21,9 +21,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCJ-z0-MtE">
                                 <rect key="frame" x="120.5" y="385" width="134" height="30"/>
                                 <state key="normal" title="Choose Destination"/>
+                                <connections>
+                                    <segue destination="w3K-tD-5Nc" kind="show" identifier="viewChooseSegue" id="1Gm-Ts-Cz5"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksT-nd-BEO">
-                                <rect key="frame" x="141" y="114" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No City Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksT-nd-BEO">
+                                <rect key="frame" x="123" y="114" width="129" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,26 +42,35 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="SVM-6n-PM7"/>
+                    <connections>
+                        <outlet property="chosenCityLabel" destination="ksT-nd-BEO" id="tVg-jK-GgD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose View Controller-->
         <scene sceneID="YUp-Rw-Qz5">
             <objects>
-                <viewController id="w3K-tD-5Nc" sceneMemberID="viewController">
+                <viewController id="w3K-tD-5Nc" customClass="ChooseViewController" customModule="NotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="enb-en-ac0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps1-AZ-vOe">
-                                <rect key="frame" x="139" y="400" width="97" height="30"/>
-                                <state key="normal" title="New York City"/>
+                                <rect key="frame" x="172" y="444" width="31" height="30"/>
+                                <state key="normal" title="NYC"/>
+                                <connections>
+                                    <action selector="nycTapped:" destination="w3K-tD-5Nc" eventType="touchUpInside" id="BpP-p3-jiI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKy-ZB-oPP">
-                                <rect key="frame" x="162" y="120" width="51" height="30"/>
+                                <rect key="frame" x="162" y="164" width="51" height="30"/>
                                 <state key="normal" title="Sydney"/>
+                                <connections>
+                                    <action selector="sydneyTapped:" destination="w3K-tD-5Nc" eventType="touchUpInside" id="ObG-pt-sdy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

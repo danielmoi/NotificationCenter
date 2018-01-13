@@ -13,6 +13,8 @@
 		1E3AD7DB2009801A00CDE857 /* NotificationCenter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AD7D92009801A00CDE857 /* NotificationCenter.xcdatamodeld */; };
 		1E3AD7DD2009801A00CDE857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AD7DC2009801A00CDE857 /* Assets.xcassets */; };
 		1E3AD7E02009801A00CDE857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AD7DE2009801A00CDE857 /* LaunchScreen.storyboard */; };
+		1E3AD7E82009822A00CDE857 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AD7E72009822A00CDE857 /* ChooseViewController.swift */; };
+		1E3AD7EA2009874600CDE857 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AD7E92009874600CDE857 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1E3AD7DC2009801A00CDE857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E3AD7DF2009801A00CDE857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E3AD7E12009801A00CDE857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3AD7E72009822A00CDE857 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		1E3AD7E92009874600CDE857 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				1E3AD7D22009801A00CDE857 /* AppDelegate.swift */,
 				1E3AD7D42009801A00CDE857 /* ViewController.swift */,
 				1E3AD7D62009801A00CDE857 /* Main.storyboard */,
+				1E3AD7E92009874600CDE857 /* Notification.swift */,
+				1E3AD7E72009822A00CDE857 /* ChooseViewController.swift */,
 				1E3AD7DC2009801A00CDE857 /* Assets.xcassets */,
 				1E3AD7DE2009801A00CDE857 /* LaunchScreen.storyboard */,
 				1E3AD7E12009801A00CDE857 /* Info.plist */,
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E3AD7D52009801A00CDE857 /* ViewController.swift in Sources */,
+				1E3AD7EA2009874600CDE857 /* Notification.swift in Sources */,
+				1E3AD7E82009822A00CDE857 /* ChooseViewController.swift in Sources */,
 				1E3AD7DB2009801A00CDE857 /* NotificationCenter.xcdatamodeld in Sources */,
 				1E3AD7D32009801A00CDE857 /* AppDelegate.swift in Sources */,
 			);

@@ -10,15 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var chosenCityLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(setToSydney(notification:)), name: .sydney, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(setToNYC(notification:)), name: .nyc, object: nil)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func setToSydney(notification: NSNotification) {
+        chosenCityLabel.text = "Sydney"
+        
     }
+    
+    @objc func setToNYC(notification: NSNotification) {
+        chosenCityLabel.text = "NYC"
+    }
+    
+
+
+
 
 
 }
